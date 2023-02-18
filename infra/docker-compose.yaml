@@ -1,6 +1,9 @@
 version: '3.8'
 
 services:
+
+  api_yamdb:
+    image: jeniavoropay/api_yamdb:v1.01.2023
   
   # db container
   db:

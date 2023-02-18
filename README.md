@@ -16,7 +16,7 @@
 ## **Как запустить проект**
 Клонировать репозиторий:
 ```
-git clone https://github.com/jeniavoropay/infra_sp2.git
+git clone https://github.com/jeniavoropay/yamdb_final.git
 ```
 Создать _.env_ файл в директории _infra_ с переменными:
 ```

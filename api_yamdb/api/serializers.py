@@ -1,11 +1,10 @@
-from django.core.validators import MinValueValidator, MaxValueValidator
 from django.conf import settings
+from django.core.validators import MaxValueValidator, MinValueValidator
 from django.shortcuts import get_object_or_404
 from rest_framework import serializers
-
-from reviews.models import Category, Comment, Genre, Review, Title, CustomUser
-from reviews.validators import reserved_names_validator, regex_validator
-from reviews.validators import validate_year
+from reviews.models import Category, Comment, CustomUser, Genre, Review, Title
+from reviews.validators import (regex_validator, reserved_names_validator,
+                                validate_year)
 
 
 class SignupSerializer(serializers.Serializer):
