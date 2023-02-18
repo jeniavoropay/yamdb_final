@@ -1,9 +1,6 @@
 version: '3.8'
 
 services:
-
-  api_yamdb:
-    image: jeniavoropay/api_yamdb:v1.01.2023
   
   # db container
   db:
@@ -15,9 +12,7 @@ services:
   
   # web container    
   web:
-    build: 
-      context: ../
-      dockerfile: api_yamdb/Dockerfile
+    image: jeniavoropay/api_yamdb:v1.01.2023
     restart: always
     volumes:
       - static_value:/app/static/
