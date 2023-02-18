@@ -1,13 +1,10 @@
-from django.core.validators import MaxValueValidator, MinValueValidator
-from django.contrib.auth.models import AbstractUser
 from django.conf import settings
+from django.contrib.auth.models import AbstractUser
+from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 
-from .validators import (
-    regex_validator,
-    validate_year,
-    reserved_names_validator
-)
+from .validators import (regex_validator, reserved_names_validator,
+                         validate_year)
 
 USER = 'user'
 MODERATOR = 'moderator'
