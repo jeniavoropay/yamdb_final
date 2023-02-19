@@ -24,7 +24,7 @@ jobs:
       run: |
         python -m flake8
         cd api_yamdb/
-        python manage.py test
+        pytest
       
   build_and_push_to_docker_hub:
     name: Push Docker image to Docker Hub
@@ -44,7 +44,7 @@ jobs:
         uses: docker/build-push-action@v2 
         with:
           push: true
-          tags: jeniavoropay/api_yamdb:latest     
+          tags: jeniavoropay/yamdb-final:latest     
   
   deploy:
     runs-on: ubuntu-latest
