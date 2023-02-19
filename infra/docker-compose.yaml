@@ -22,7 +22,7 @@ services:
     env_file:
       - ./.env
   
-  # nginx container
+  # nginx container 
   nginx:
     image: nginx:1.21.3-alpine
     ports:
