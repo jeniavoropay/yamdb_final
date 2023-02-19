@@ -45,7 +45,7 @@ jobs:
         with:
           file: ./api_yamdb/Dockerfile
           push: true
-          tags: jeniavoropay/yamdb-final:latest     
+          tags: jeniavoropay/api_yamdb:latest     
   
   deploy:
     runs-on: ubuntu-latest

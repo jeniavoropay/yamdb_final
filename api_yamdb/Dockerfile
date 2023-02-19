@@ -2,7 +2,7 @@ FROM python:3.7-slim
 
 WORKDIR /app/api_yamdb
 
-COPY ./requirements.txt /app
+COPY api_yamdb/requirements.txt /app
 
 RUN apt update && apt install -y gcc libpq-dev
 
