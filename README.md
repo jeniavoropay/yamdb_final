@@ -41,7 +41,7 @@ docker-compose exec web python manage.py collectstatic --no-input
 ```
 docker-compose exec web python manage.py createsuperuser
 ```
-### Проект в облаке
+## Проект в облаке
 Доступен на [Yandex Cloud](http://51.250.109.110/admin/login/?next=/admin/).
 ## **Документация**
 Доступна на [Redoc](http://51.250.109.110/redoc/).
