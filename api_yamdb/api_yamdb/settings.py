@@ -15,7 +15,7 @@ if os.getenv('ENVIRONMENT') == 'dev':
 else:
     DEBUG = False
 
-ALLOWED_HOSTS = [os.getenv('ALLOWED_HOSTS')]
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', default='51.250.109.110')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
